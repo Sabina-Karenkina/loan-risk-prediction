@@ -1,7 +1,8 @@
 #Loan Risk Prediction App
 
 Приложение для оценки вероятности одобрения кредита с использованием моделей машинного обучения.
-
+Создано на основе датасета:
+https://www.kaggle.com/datasets/sohailkhan05/loan-risk-prediction/data
 ##  Используемые модели
 - XGBoost
 
@@ -13,7 +14,7 @@
 - Реализовано веб-приложение на Streamlit
 
 ##  Demo
-https://your-link.streamlit.app
+https://loan-risk-prediction-dpfnhkr2nsey6f9asce7bm.streamlit.app/
 
 ##  Технологии
 - Python
