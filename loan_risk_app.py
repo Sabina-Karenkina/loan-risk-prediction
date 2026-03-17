@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import joblib
+import pickle
 
 #Конфигурация страницы 
 st.set_page_config(
@@ -12,7 +12,8 @@ st.set_page_config(
 # Загрузка модели (кэшируется — загружается один раз!)
 @st.cache_resource
 def load_model():
-    return joblib.load('loan_risk_model.joblib')
+    with open('loan_risk_model.joblib', 'rb') as f:
+        return pickle.load(f)
 
 model = load_model()
 
